@@ -1,0 +1,3 @@
+include ':app', ':vdom', ':vnode'
+project (":vdom").projectDir = new File("../vdom")
+project (":vnode").projectDir = new File("../vnode")
