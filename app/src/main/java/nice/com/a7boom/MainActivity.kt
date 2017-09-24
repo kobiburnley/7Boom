@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         ABoom.init(this)
         Platform.platform = Platform.ANDROID
         androidRenderer = ABoom.boom.androidRendered
-        setContentView(androidRenderer.renderComponent(MainComponent(), null))
+        setContentView(androidRenderer.renderComponent(::MainComponent, null))
     }
 }

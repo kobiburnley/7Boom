@@ -10,10 +10,9 @@ import vm.counter.Counter
 class MainComponent : Component<Any?, Any?>(null) {
     override var props: Any? = null
 
-    override fun render(): VNode<*> = h(
-            ::FlatList, FlatListProps(
+    override fun render() = h(::FlatList, FlatListProps(
             length = 30,
-            onRenderRow = { viewType ->
+            onRenderRow = { _ ->
                 h(::Counter)
             },
             onUpdateRow = { view, position -> }
