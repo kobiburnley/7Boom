@@ -1,3 +1,4 @@
-include ':app', ':vdom', ':vnode'
-project (":vdom").projectDir = new File("../vdom")
-project (":vnode").projectDir = new File("../vnode")
+include ':app', ':vdom', ':vnode', ':iview'
+project (":vdom").projectDir = new File("../vdom/vdom")
+project (":vnode").projectDir = new File("../vnode/vnode")
+project (":iview").projectDir = new File("../iview")

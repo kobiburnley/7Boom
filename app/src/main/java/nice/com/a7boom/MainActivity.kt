@@ -2,7 +2,7 @@ package nice.com.a7boom
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import vm.vdom.Platform
+import vm.render.Platform
 import vm.vdom.android.AndroidRenderer
 
 class MainActivity : AppCompatActivity() {
